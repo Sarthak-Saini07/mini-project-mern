@@ -26,15 +26,15 @@ function displayProducts(products) {
     });
 }
 
-function searchProduct() {
-    const value = document
-        .getElementById("searchInput")
-        .value
-        .toLowerCase();
+// function searchProduct() {
+//     const value = document
+//         .getElementById("searchInput")
+//         .value
+//         .toLowerCase();
 
-    const filtered = allProducts.filter(p =>
-        p.title.toLowerCase().includes(value)
-    );
+//     const filtered = allProducts.filter(p =>
+//         p.title.toLowerCase().includes(value)
+//     );
 
-    displayProducts(filtered);
-}
+//     displayProducts(filtered);
+// }
