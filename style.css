@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* SEARCH */
+.search-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    padding: 8px;
+    width: 250px;
+}
+
+.search-box button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* GRID */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.product-card {
+    height: 340px;                 /* SAME HEIGHT */
+    background: white;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* IMAGE */
+.product-card img {
+    height: 150px;                 /* SAME IMAGE SPACE */
+    width: 100%;
+    object-fit: contain;
+}
+
+/* TITLE */
+.product-card h3 {
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;         /* MAX 2 LINES */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* PRICE */
+.price {
+    font-weight: bold;
+    text-align: center;
+}
